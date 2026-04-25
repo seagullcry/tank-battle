@@ -326,11 +326,8 @@
 
                             if (tank.isPlayer && !this.isPlayer) {
                                 game.playerHit();
-                            } else if (!tank.isPlayer && this.isPlayer) {
+                            } else if (!tank.isPlayer) {
                                 game.enemyDestroyed();
-                            }
-
-                            if (!tank.isPlayer) {
                                 tank.alive = false;
                             }
                             return false;
