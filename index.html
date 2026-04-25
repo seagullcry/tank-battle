@@ -380,7 +380,7 @@
             }
 
             spawnPlayer() {
-                this.player = new Tank(9 * CELL_SIZE, 19 * CELL_SIZE, UP, true);
+                this.player = new Tank(9 * CELL_SIZE, 18 * CELL_SIZE, UP, true);
                 this.tanks.push(this.player);
             }
 
@@ -438,7 +438,7 @@
                     this.gameOver();
                 } else {
                     this.player.x = 9 * CELL_SIZE;
-                    this.player.y = 19 * CELL_SIZE;
+                    this.player.y = 18 * CELL_SIZE;
                     this.player.direction = UP;
                 }
                 this.updateScore();
@@ -462,7 +462,7 @@
                 this.loadMap();
                 this.tanks = [this.player];
                 this.player.x = 9 * CELL_SIZE;
-                this.player.y = 19 * CELL_SIZE;
+                this.player.y = 18 * CELL_SIZE;
                 this.player.direction = UP;
                 this.enemyCount = 0;
                 this.updateScore();
