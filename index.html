@@ -401,9 +401,9 @@
                 document.addEventListener('keydown', (e) => {
                     this.keys[e.key] = true;
 
-                    if (e.key === ' ') {
+                    if (e.key === ' ' || e.key.startsWith('Arrow')) {
                         e.preventDefault();
-                        if (this.player && this.player.alive) {
+                        if (e.key === ' ' && this.player && this.player.alive) {
                             this.player.shoot();
                         }
                     }
